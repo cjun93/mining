@@ -1,0 +1,10 @@
+[Unit]
+Description=mining.service
+
+
+[Service]
+WorkingDirectory=/home/chris/tools/
+ExecStart=/home/chris/tools/MPH-autoswitch.sh
+
+[Install]
+WantedBy=multi-user.target
