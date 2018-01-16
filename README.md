@@ -1,1 +1,5 @@
 # mining
+
+Private Directory
+
+  
