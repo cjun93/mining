@@ -1,0 +1,4 @@
+#!/bin/bash
+# Change donate rate
+cmake .. -DCMAKE_INSTALL_PREFIX=$HOME/tools/xmr-stak/ -DMICROHTTPD_ENABLE=ON -DOpenSSL_ENABLE=ON -DXMR-STAK_CURRENCY=monero -DCPU_ENABLE=OFF -DCUDA_ENABLE=ON -DCUDA_ARCH=61 
+make install
