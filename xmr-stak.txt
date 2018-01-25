@@ -1,4 +1,7 @@
 #!/bin/bash
+# How to compile xmr-stak without CPU , with only CUDA
+# $sudo apt install libmicrohttpd-dev
+# 
 # Change donate rate
-cmake .. -DCMAKE_INSTALL_PREFIX=$HOME/tools/xmr-stak/ -DMICROHTTPD_ENABLE=ON -DOpenSSL_ENABLE=ON -DXMR-STAK_CURRENCY=monero -DCPU_ENABLE=OFF -DCUDA_ENABLE=ON -DCUDA_ARCH=61 
+cmake .. -DCMAKE_INSTALL_PREFIX=$HOME/tools/xmr-stak/ -DMICROHTTPD_ENABLE=ON -DOpenSSL_ENABLE=ON -DXMR-STAK_CURRENCY=monero -DCPU_ENABLE=OFF -DCUDA_ENABLE=ON -DOpenCL_ENABLE=OFF -DCUDA_ARCH=61 
 make install
