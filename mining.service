@@ -1,4 +1,7 @@
 % The file must be located in /etc/systemd/system/
+% Make the file and execute $sudo systemctl enable mining.service to enable the file
+
+
 
 [Unit]
 Description=mining.service
@@ -6,7 +9,7 @@ Description=mining.service
 
 [Service]
 WorkingDirectory=/home/chris/tools/
-ExecStart=/home/chris/tools/MPH-autoswitch.sh
+ExecStart=/home/chris/tools/mining.sh
 
 [Install]
 WantedBy=multi-user.target
