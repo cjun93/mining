@@ -1,0 +1,7 @@
+How to compile the ethminer 0.18 on Arch Linux.
+1. The gcc version of Arch linux is > 9.1
+2. To compile the ethminer 0.18, it is required to use gcc-8
+3. $ mkdir build; cd build
+4. $ export CC=gcc-8
+   $ export CCX=g++-8
+5. then, compile it as usual.
